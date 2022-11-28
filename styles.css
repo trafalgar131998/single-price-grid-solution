@@ -3,7 +3,11 @@
     margin: 0;
 }
 .grid-container{
-    grid-template-rows: repeat(3, [row-start] 1fr [row-end]);
-    grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
     background-color: orange;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+.header{
+    background-color: white;
+    grid-column: 1/3;
 }
