@@ -1,140 +1,141 @@
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin:0;
 }
 @font-face {
     font-family: Karla;
     src: url(./fonts/Karla-Regular.ttf);
 }
 body{
-    font-size: 1em;
     font-family: Karla, sans-serif;
     background-color: lavender;
+    width: 100%;
+    min-height: 100vh;
 }
 /*layout*/
-.grid-container{
+/*.grid-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    margin: 2.5em ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 25em 25em;
     justify-content: center;
     align-items: center;
     box-shadow: 10px 5px 5px rgb(221, 219, 219);
 }
-header{
+*/
+.grid-container{
     display: grid;
-    grid-column: 1/3;
-    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 10px 5px 5px rgb(221, 219, 219);
+    margin: 10%;
 }
-content{
-    display: grid;
-    grid-row: 2/4;
-    grid-column: 1/-1;
-}
-
-/*card&item-styling*/
-header{
-    background-color: white;
-    padding: 1.6em;
+/*.card-top{
+    background-color: #D4F1F4;
+    margin: 5% 20% 0 20%;
+    padding: 5% 5%;
     border-radius: 10px 10px 0 0;
 }
-.item1{
-    background-color: hsl(179, 62%, 43%);
-    padding: 1.6em;
-}
-.item2{
-    background-color:  hsla(179, 65%, 50%, 0.922);
-    padding: 1.6em;
+.card-right{
+    background-color: #fdffcd;
+   
+    margin: -35em 20% 0 20%;
+    padding: 11% 5%;
     border-radius: 0 0 10px 10px;
 }
-/*paragraph-font-style*/
+.card-left{
+    background-color: #ffebbb;
+    
+    margin: -12em 20% 0 20%;
+    padding: 11% 5%;
+}
+*/
+.card-top{
+    background-color:#D4F1F4;
+    
+}
+.card-left{
+    background-color: #faf0da;
+}
+.card-right{
+    background-color: #fdffcd;
+}
+/*card-top-styling*/
 .heading{
-    color: hsl(179, 62%, 43%);
-    font-size: 1.2em;
+    color: #0a4095;
     font-weight: 700;
-    margin-bottom: 1em;
+    font-size: 1.6em;
+    padding: 2rem 1rem 0 2rem;
 }
 .sub-heading{
-    color: hsl(57, 87%, 46%);
-    font-size: 0.9em;
+    color: rgba(230, 48, 48, 0.9);
     font-weight: 700;
-    margin-bottom: 1.4em;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    padding: 1rem 2rem 0 2rem;
 }
 .context{
-    color: hsl(218, 22%, 67%);
+    color: #105830;
     font-weight: 400;
-    font-size: 0.8em;
+    font-size: 1.1rem;
     text-justify: auto;
-    line-height: 1.7em;
+    line-height: 1.6em;
+    padding: 1rem 2rem 1.8rem 1.7rem;
 }
-
-.monthly, ul, .price, .sub-context{
-    color: whitesmoke;
-}
-
-h2{
-    color: white;
-    font-size: 1em;
-    font-size: 400;
-    margin-bottom: 0.7em ;
-}
-.monthly, ul{
-    opacity: 0.80;
-}
-
-.price{
-    font-size: 2.5em;
+/*card-left-styling*/
+.subscription{
+    color: #5d7e93;
     font-weight: 700;
-    margin-bottom: 0.2em;
+    font-size: 1.4em;
+    padding: 2rem 1rem 0 2rem;
 }
-
-span.monthly{
-    text-align:end;
-    font-size: 0.5em;
-    font-weight: lighter;
-}
-.sub-context{
+.small{
+    color:#595E60;
+    opacity: .50;
     font-size: 1em;
     font-weight: 400;
-    margin-bottom: 1.5em;
+    padding: 1rem 2rem 0 1.9rem;
 }
-ul{
-    list-style-type: none;
-    padding: 0.1em;
-    line-height: 1.5em;
-    font-size: 0.9em;
+span{
+    color: #4a0404;
+    font-weight: 700;
+    font-size: 2.4em;
+    margin-bottom: 1em;
+}
+
+.sub-context{
+   color:#4a0404;
+   font-weight: 400;
+   font-size: 1.2em;
+   padding: 0.3rem 2rem 0 1.9rem;
+
+}
+.click{
+    background-color: #8cd5ff;
+    box-shadow: 0 8px 6px -6px rgb(27, 26, 26);
+    padding: 10px 30px;
+    border-radius: 8px;
+    padding: 0.9rem 5rem 0.9rem 5rem;
+    border-style: none;
 }
 button{
-    background-color: hsl(71, 73%, 54%);
+    margin: 1.8rem 5rem 0 5rem;
+}
+a{
+    color:#36EEE0;
+    font-size: 1.3em;
     font-weight: 700;
-    font-size: 0.9em;
-    color: whitesmoke;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 8px 6px -6px rgb(88, 87, 87);
-    padding: 1em;
-    border: none;
-    margin-bottom: 0.1em;
+    text-decoration: none;
 }
-
-
-@media (min-width: 24rem) and (max-width: 90rem){
-    .grid-container{
-        display: flex;
-        flex-direction: column;
-        padding-left: 1.5em;
-    }
-    content{
-        display: flex;
-        flex-direction: row;
-    }
-    .item1{
-        padding: 2.5em
-    }
-    .item2{
-        padding: 2.5em;
-    }
-
+/*card-right-styling*/
+.why-us{
+    color: #395fbf;
+    font-weight: 700;
+    font-size: 1.7em;
 }
-
-
+ul{
+    color: #4B7BF5;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
 
