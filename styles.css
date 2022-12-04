@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    margin:0;
 }
 @font-face {
     font-family: Karla;
@@ -8,9 +7,9 @@
 }
 body{
     font-family: Karla, sans-serif;
-    background-color: lavender;
-    width: 100%;
-    min-height: 100vh;
+}
+main{
+    position: absolute;
 }
 /*layout*/
 /*.grid-container{
@@ -25,9 +24,10 @@ body{
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 10% 10%;
     box-shadow: 10px 5px 5px rgb(221, 219, 219);
-    margin: 10%;
+    margin: 5% 10% 5% 10%;
+    padding: 15% 10% 15% 5%;
 }
 /*.card-top{
     background-color: #D4F1F4;
@@ -55,6 +55,7 @@ body{
 }
 .card-left{
     background-color: #faf0da;
+    padding-bottom: 1.3em;
 }
 .card-right{
     background-color: #fdffcd;
@@ -93,13 +94,13 @@ body{
     opacity: .50;
     font-size: 1em;
     font-weight: 400;
-    padding: 1rem 2rem 0 1.9rem;
+    padding: 0 2rem 0 1.9rem;
 }
 span{
     color: #4a0404;
     font-weight: 700;
-    font-size: 2.4em;
-    margin-bottom: 1em;
+    font-size: 2em;
+    margin-bottom: 0.5rem;
 }
 
 .sub-context{
@@ -107,35 +108,40 @@ span{
    font-weight: 400;
    font-size: 1.2em;
    padding: 0.3rem 2rem 0 1.9rem;
-
 }
 .click{
     background-color: #8cd5ff;
     box-shadow: 0 8px 6px -6px rgb(27, 26, 26);
-    padding: 10px 30px;
     border-radius: 8px;
-    padding: 0.9rem 5rem 0.9rem 5rem;
+    padding: 0.9rem 0.5rem 1rem 1rem;
     border-style: none;
+    width: 85%;
 }
+
 button{
-    margin: 1.8rem 5rem 0 5rem;
+    margin: 2% 10% 2% 5%; 
 }
+
 a{
-    color:#36EEE0;
+    color:#0b3e3a;
     font-size: 1.3em;
     font-weight: 700;
     text-decoration: none;
 }
+
 /*card-right-styling*/
 .why-us{
     color: #395fbf;
     font-weight: 700;
     font-size: 1.7em;
+    padding: 0em 1.2em 0 ;
+
 }
 ul{
     color: #4B7BF5;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.3em;
+    padding: 0 3rem 0 3em;
 }
 
