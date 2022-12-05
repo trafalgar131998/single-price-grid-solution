@@ -14,11 +14,13 @@ body{
     background-color: white;
     align-items: center;
     justify-content: center;
+    padding: 3em; 
 }
 header{
     background-color: lavender;
     grid-column: 1/5;
     border-radius: 10px 10px 0 0;
+    padding-bottom: 3%;
 }
 /*second-grid-card*/
 .item-container1{
@@ -41,24 +43,30 @@ header{
     padding-bottom: 5%;
     margin-bottom: 10%;
     overflow: hidden;
+    border-radius: 0 0 10px 10px;
 }
 
 /*top-card*/
 h1{
     color: hsl(179, 62%, 43%);
-    font-size: 1.2em;
-    padding-top: 3%;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 5% 2% 0 2%;
 }
 h2{
     color:blueviolet;
     font-size: 1em;
+    font-weight: 700;
+    line-height: 1.3em;
+    padding: 2% 2% 0 2%;
 }
 .context{
     color: #0C2D48;
     font-weight: 400;
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 0.9em;
+    line-height: 1.7em;
     margin-bottom: 10%;
+    padding: 0 3% 0 2%;
 
 }
 h1, h2, .context{
@@ -70,18 +78,28 @@ h3{
     color: #3D550C;
     font-size: 1.3em;
     margin-left: 8%;
+    padding: 2% 2% 0 2%;
 }
-h4{
-    font-size: 1.5em;
+.big{
+    font-size: 1.8em;
     color: #59981A;
     font-weight: 700;
-    margin-left: 8%;
-    margin-top: 3%;
 }
+.small{
+    color: #59981A;
+    font-size: 1em;
+    opacity: .50;
+
+}
+h4{
+    margin: 2% 10% 0 10%;
+}
+
 p{
     color: #7E6E13;
-    font-size: 400;
-    padding-left: 8%;
+    font-weight: 400;
+    margin-left: 8%;
+    padding: 1% 2% 0 2%;
 }
 a{
     padding-left: 8%;
