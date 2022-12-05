@@ -5,21 +5,84 @@
     font-family: Karla;
     src: url(./fonts/Karla-Regular.ttf);
 }
+/*layout*/
 body{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 50%);
     font-family: Karla, sans-serif;
-    justify-items: stretch;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
 }
 header{
     background-color: lavender;
     grid-column: 1/5;
-    padding: 5%;
+    border-radius: 10px 10px 0 0;
 }
-main{
-    background-color: bisque;
-    grid-column: 1/5;
-    padding: 5% 0 0 10%;
+/*second-grid-card*/
+.item-container1{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
+.card-bottom-L{
+    background-color: #BFD7ED;
+    padding-bottom: 10%;
+}
+
+/*third-grid-card*/
+.item-container2{
+    display: grid;
+
+}
+.card-bottom-R{
+    background-color: #B1D4E0;
+    padding-bottom: 5%;
+    margin-bottom: 10%;
+    overflow: hidden;
+}
+
+/*top-card*/
+h1{
+    color: hsl(179, 62%, 43%);
+    font-size: 1.2em;
+    padding-top: 3%;
+}
+h2{
+    color:blueviolet;
+    font-size: 1em;
+}
+.context{
+    color: #0C2D48;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 10%;
+
+}
+h1, h2, .context{
+    margin-left: 8%;
+    margin-right: 5%;
+}
+/*card-bottom-L*/
+h3{
+    color: #3D550C;
+    font-size: 1.3em;
+    margin-left: 8%;
+}
+h4{
+    font-size: 1.5em;
+    color: #59981A;
+    font-weight: 700;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+p{
+    color: #7E6E13;
+    font-size: 400;
+    padding-left: 8%;
+}
+a{
+    padding-left: 8%;
+}
