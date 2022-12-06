@@ -11,16 +11,15 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 50%);
     font-family: Karla, sans-serif;
-    background-color: white;
+    background-color: lightcyan;
     align-items: center;
-    justify-content: center;
-    padding: 3em; 
+    padding: 5%; 
 }
-header{
-    background-color: lavender;
+
+.card-top{
+    background-color: rgba(212, 212, 252, 0.779);
     grid-column: 1/5;
     border-radius: 10px 10px 0 0;
-    padding-bottom: 3%;
 }
 /*second-grid-card*/
 .item-container1{
@@ -29,8 +28,8 @@ header{
 }
 
 .card-bottom-L{
-    background-color: #BFD7ED;
-    padding-bottom: 10%;
+    background-color: hsl(179, 62%, 43%);
+    padding: 3% 3% 10% 3%;
 }
 
 /*third-grid-card*/
@@ -39,35 +38,34 @@ header{
 
 }
 .card-bottom-R{
-    background-color: #B1D4E0;
+    background-color: hsl(178, 78%, 18%);
     padding-bottom: 5%;
     margin-bottom: 10%;
     overflow: hidden;
     border-radius: 0 0 10px 10px;
 }
 
+
 /*top-card*/
 h1{
     color: hsl(179, 62%, 43%);
     font-size: 1.3em;
     font-weight: 700;
-    padding: 5% 2% 0 2%;
+    padding: 3% 3% 0 0;
 }
 h2{
     color:blueviolet;
     font-size: 1em;
     font-weight: 700;
-    line-height: 1.3em;
-    padding: 2% 2% 0 2%;
+    line-height: 1.2em;
+    padding: 3% 3% 0 0;
 }
 .context{
     color: #0C2D48;
     font-weight: 400;
     font-size: 0.9em;
     line-height: 1.7em;
-    margin-bottom: 10%;
-    padding: 0 3% 0 2%;
-
+    text-justify: auto;
 }
 h1, h2, .context{
     margin-left: 8%;
@@ -75,32 +73,55 @@ h1, h2, .context{
 }
 /*card-bottom-L*/
 h3{
-    color: #3D550C;
+    color: white;
     font-size: 1.3em;
-    margin-left: 8%;
-    padding: 2% 2% 0 2%;
+    padding: 2% 6% 0 6%;
 }
 .big{
     font-size: 1.8em;
-    color: #59981A;
+    color: white;
     font-weight: 700;
 }
 .small{
-    color: #59981A;
+    color: white;
     font-size: 1em;
-    opacity: .50;
+    opacity: .60;
 
 }
 h4{
-    margin: 2% 10% 0 10%;
+    margin: 2% 5% 0 5%;
 }
 
 p{
-    color: #7E6E13;
-    font-weight: 400;
-    margin-left: 8%;
-    padding: 1% 2% 0 2%;
+    margin-bottom: 10%;
 }
-a{
-    padding-left: 8%;
+.access{
+    color: white;
+    margin-left: 5%;
+}
+.click{
+    text-align: center;
+}
+button{
+    background-color: hsl(78, 88%, 46%);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 3px 3px rgb(90, 89, 89);
+    padding: 5% 10% 5% 10%;
+    width: 90%;
+    font-weight: 700;
+    color: white;
+}
+/*third-card-styling*/
+.short-text{
+    margin-left: 3%;
+    padding: 2% 6% 0 6%;
+}
+ul{
+    color: white;
+    list-style: none;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.3em;
+    padding: 0 10% 4% 10%;
 }
