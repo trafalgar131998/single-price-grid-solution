@@ -10,7 +10,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 50%);
-    font-family: Karla, sans-serif;
+    font-family: 'Karla', sans-serif;
     background-color: lightcyan;
     align-items: center;
     padding: 5%; 
