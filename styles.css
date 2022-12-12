@@ -1,122 +1,17 @@
-* {
+*{
     box-sizing: border-box;
+    margin: 0;
 }
-@font-face {
-    font-family: Karla;
-    src: url(./fonts/Karla-Regular.ttf);
-}
-/*layout*/
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 50%);
-    font-family: 'Karla', sans-serif;
-    background-color: lightcyan;
-    align-items: center;
-    padding: 3%;
 }
-
+#item-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*card-top-style*/
 .card-top{
-    background-color: rgba(212, 212, 252, 0.779);
-    grid-column: 1/5;
-    border-radius: 10px 10px 0 0;
-}
-/*second-grid-card*/
-.item-container1{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.card-bottom-L{
-    background-color: hsl(179, 62%, 43%);
-    padding: 3% 3% 10% 3%;
-}
-
-/*third-grid-card*/
-.card-bottom-R{
-    background-color: hsl(178, 78%, 18%);
-    margin-bottom: 5%;
-    overflow: hidden;
-    border-radius: 0 0 10px 10px;
-}
-
-
-/*top-card*/
-h1{
-    color: hsl(179, 66%, 16%);
-    font-size: 1.3em;
-    font-weight: 700;
-    padding: 3% 3% 0 0;
-}
-h2{
-    color:rgb(81, 17, 142);
-    font-size: 1em;
-    font-weight: 700;
-    line-height: 1.2em;
-    padding: 3% 3% 0 0;
-}
-.context{
-    color: #0C2D48;
-    font-weight: 400;
-    font-size: 0.9em;
-    line-height: 1.7em;
-}
-h1, h2, .context{
-    margin-left: 8%;
-    margin-right: 5%;
-}
-/*card-bottom-L*/
-h3{
-    color: rgb(45, 33, 33);
-    font-size: 1.3em;
-    padding: 2% 6% 0 6%;
-}
-.big{
-    font-size: 1.8em;
-    color: rgb(13, 56, 9);
-    font-weight: 700;
-}
-.small{
-    color: rgb(5, 10, 3);
-    font-size: 1em;
-    opacity: .80;
-
-}
-h4{
-    margin: 2% 5% 0 5%;
-}
-
-p{
-    margin-bottom: 10%;
-}
-.access{
-    color: rgb(2, 41, 3);
-    margin-left: 5%;
-}
-.click{
-    text-align: center;
-}
-button{
-    background-color: hsl(78, 88%, 46%);
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 3px 3px rgb(90, 89, 89);
-    padding: 5% 10% 5% 10%;
-    width: 90%;
-    font-weight: 700;
-    color: rgb(76, 87, 4);
-}
-/*third-card-styling*/
-.short-text{
-    margin-left: 3%;
-    padding: 2% 6% 0 6%;
-    color: wheat;
-}
-ul{
-    color: white;
-    list-style: none;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 1.6em;
-    padding: 0 10% 4% 10%;
+    padding: 5%;
+    background-color: antiquewhite;
 }
