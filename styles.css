@@ -2,9 +2,18 @@
     box-sizing: border-box;
     margin: 0;
 }
+@font-face {
+    font-family: Karla;
+    src: url(./fonts/Karla-Regular.ttf);
+}
+
 body{
     display: grid;
     grid-template-columns: 1fr;
+    margin: 40px 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
 }
 #item-container{
     display: flex;
@@ -13,5 +22,23 @@ body{
 /*card-top-style*/
 .card-top{
     padding: 5%;
-    background-color: antiquewhite;
+    background-color:#A1DBF1;
+    font-family: Karla, sans-serif;
+    border-radius: 10px 10px 0 0;
+}
+h1{
+    margin: 10px 15px 20px 15px;
+    color: hsl(179, 77%, 10%);
+    font-size: 1.5em;
+}
+h2{
+    color: rgb(3, 59, 60);
+    margin: 10px 15px 20px 10px;
+    font-size: 1.2em; 
+}
+.context{
+    margin: 10px;
+    font-size: 1em;
+    line-height: 1.3em;
+    text-justify: auto;
 }
