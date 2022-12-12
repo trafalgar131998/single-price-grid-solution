@@ -33,10 +33,6 @@ body{
 }
 
 /*third-grid-card*/
-.item-container2{
-    display: grid;
-
-}
 .card-bottom-R{
     background-color: hsl(178, 78%, 18%);
     margin-bottom: 5%;
