@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    margin: 0;
 }
 @font-face {
     font-family: Karla;
@@ -13,7 +12,6 @@ body{
     margin: 40px 30px;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
 }
 #item-container{
     display: flex;
@@ -22,23 +20,58 @@ body{
 /*card-top-style*/
 .card-top{
     padding: 5%;
-    background-color:#A1DBF1;
+    background-color:#D4F1F4;
     font-family: Karla, sans-serif;
     border-radius: 10px 10px 0 0;
 }
 h1{
-    margin: 10px 15px 20px 15px;
+    margin: 10px 10px 20px;
     color: hsl(179, 77%, 10%);
-    font-size: 1.5em;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-justify: inter-character;
 }
 h2{
     color: rgb(3, 59, 60);
-    margin: 10px 15px 20px 10px;
-    font-size: 1.2em; 
+    margin: 10px 10px 15px;
+    font-size: 1em;
+    line-height: 1.4em;
+    font-weight: 700;
 }
 .context{
-    margin: 10px;
-    font-size: 1em;
-    line-height: 1.3em;
-    text-justify: auto;
+    padding-right: 10px;
+    margin: 10px -5px 20px 10px;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.7em;
 }
+/*bottom-card-styling*/
+.card-bottom-L{
+    background-color: #75E6DA;
+    padding: 20%;
+    font-family: Karla, sans-serif;
+}
+.card-bottom-R{
+    background-color: #189AB4;
+    padding: 10%;
+    font-family: Karla, sans-serif;
+}
+.subscription{
+   margin: -20%;
+}
+h4{
+    margin: 40px -5px 0 -20px;
+}
+.big{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.small{
+    font-size: 1em;
+    opacity: .50;
+    font-weight: 400;
+}
+.access{
+    margin: 10px -5px 20px -20px;
+}
+.click
